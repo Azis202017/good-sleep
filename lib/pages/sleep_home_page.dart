@@ -182,7 +182,7 @@ class _SleepHomePageState extends State<SleepHomePage> {
                               padding:
                                   EdgeInsets.only(left: 24, right: 24, top: 8),
                               child: Text(
-                                'Non-stop 8- hour mixes of our most popular sleep audio',
+                                'Non-stop mixes of our most popular sleep audio',
                                 style: Theme.of(context)
                                     .textTheme
                                     .caption
@@ -195,7 +195,9 @@ class _SleepHomePageState extends State<SleepHomePage> {
                               width: 70.2,
                               height: 35.06,
                               child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(context, MaterialPageRoute(builder : (_) => ListMusicPage()));
+                                },
                                 style: ElevatedButton.styleFrom(
                                     animationDuration: Duration(seconds: 2),
                                     shape: RoundedRectangleBorder(
