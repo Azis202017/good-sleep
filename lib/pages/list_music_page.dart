@@ -105,18 +105,28 @@ class ListMusicPage extends StatelessWidget {
             delegate: SliverChildListDelegate([
               Container(
                 width: double.infinity,
-                child: Row(
-                  
-                  children: [
+                child: Row(children: [
                   Container(
-                    margin: EdgeInsets.only(right : 24, top: 24),
-                    child: IconButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        icon: Icon(Icons.arrow_back, color: Colors.white)),
+                    margin: EdgeInsets.only(right: 24, top: 24, left : 16),
+                    child: ElevatedButton(
+                      style : ElevatedButton.styleFrom(
+                        primary: Colors.transparent
+                      ),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child: Icon(Icons.arrow_back),
+                    ),
                   ),
-                  Container(margin: EdgeInsets.only(top: 24,), child: Text('Sleep Music', style: Theme.of(context).textTheme.headline5?.copyWith(color: Colors.white)))
+                  Container(
+                      margin: EdgeInsets.only(
+                        top: 24,
+                      ),
+                      child: Text('Sleep Music',
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline5
+                              ?.copyWith(color: Colors.white)))
                 ]),
               ),
             ]),
