@@ -4,7 +4,6 @@ class SleepHomePage extends StatefulWidget {
   @override
   _SleepHomePageState createState() => _SleepHomePageState();
 }
-
 class _SleepHomePageState extends State<SleepHomePage> {
   List<SleepMusic> sleepMusic = [
     SleepMusic(

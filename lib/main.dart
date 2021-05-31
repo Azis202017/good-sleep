@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:good_sleep/shared/shared.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'pages/pages.dart';
@@ -14,7 +13,7 @@ Future<void> main() async {
 }
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
-  SystemChrome.setEnabledSystemUIOverlays([]);
+
     
     return MaterialApp(
       home : initialRoute == 0 || initialRoute == null ? SleepStartedPage() : SleepHomePage() ,
