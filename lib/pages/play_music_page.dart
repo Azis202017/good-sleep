@@ -37,7 +37,7 @@ class _PlayMusicPageState extends State<PlayMusicPage> {
               )),
           SingleChildScrollView(
             child: Container(
-              margin: EdgeInsets.only(top : 160),
+              margin: EdgeInsets.only(top : 161),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
