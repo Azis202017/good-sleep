@@ -1,6 +1,5 @@
 # good-sleep
-Submission dicoding : Abdul Azis Al Ayubbi <br>
-27 Mei 2021
+
 
 
 
